@@ -40,3 +40,33 @@ Example prompt:
 ```text
 Explain the concept with one practical project idea.
 ```
+
+## Run In The Web UI
+
+Start the ADK web UI from the repo root:
+
+```powershell
+adk web .
+```
+
+Open the local URL that ADK prints, then select `state_template_agent`.
+
+Use this prompt to save state from the web UI:
+
+```text
+Save my profile: my name is Maya, my topic is Google ADK tools, my learning level is beginner, and my preferred tone is friendly.
+```
+
+Then ask a follow-up in the same session:
+
+```text
+Create a short study plan for me.
+```
+
+The first message calls the `save_profile` tool and writes values into session
+state. The next message shows `{user_name}`, `{topic}`, `{learning_level}`, and
+`{tone}` being used from the saved session state.
+
+By default, `adk web` stores sessions under local `.adk` storage. Avoid
+`--no_use_local_storage` or `--session_service_uri memory://` if you want the
+saved state to survive server restarts.
