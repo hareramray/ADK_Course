@@ -54,7 +54,7 @@ Open the local URL that ADK prints, then select `state_template_agent`.
 Use this prompt to save state from the web UI:
 
 ```text
-Save my profile: my name is Maya, my topic is Google ADK tools, my learning level is beginner, and my preferred tone is friendly.
+Save my profile: my name is Hareram, my topic is Google ADK tools, my learning level is beginner, and my preferred tone is friendly.
 ```
 
 Then ask a follow-up in the same session:
